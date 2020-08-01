@@ -2,3 +2,5 @@
 
 Command prompt 1 - npm run compile:sass
 Command prompt 2 - live-server
+
+Start live server - npm start
