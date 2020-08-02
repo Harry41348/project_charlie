@@ -2,3 +2,5 @@ code/node_modules/
 code/package.json
 code/package-lock.json
 code/sass/
+code/css/style.comp.css
+code/css/style.concat.css
