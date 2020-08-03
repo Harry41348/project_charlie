@@ -25,18 +25,38 @@
         </header>
 
         <main class="boxed">
-            <h1 class="heading">Get fit now!</h1>
-            <form class="form">
-                <input type="text" id="name" placeholder="Full Name">
-                <input type="text" id="email" placeholder="Email">
-                <input type="text" id="number" placeholder="Phone Number">
-                <label for="dob">Date of birth</label>
-                <input type="date" id="dob">
-                <input type="number" id="height" value="180">
-                <input type="number" id="weight" value="75">
-                <input type="text" id="goals" placeholder="goals">
+            <h1 class="heading">Lets get in touch!</h1>
+            <div class="form-wrapper">
+                <form class="form">
+                    <input type="text" class="form__text" id="name" placeholder="* Full Name" required />
+                    <input type="text" class="form__text" id="email" placeholder="* Email" required>
+                    <input type="text" class="form__text" id="number" placeholder="* Phone Number" required>
+                    <div class="form__date">
+                        <label class="form__date-text" for="dob">* Date of birth:</label>
+                        <input type="date" class="form__date-date" id="dob" required>
+                    </div>
+                    <div class="form__numbers">
+                        <label for="height" class="form__numbers-text">Height</label>
+                        <input type="number" class="form__numbers-number" id="feet" placeholder="6 ft">
+                        <input type="number" class="form__numbers-number" id="inches" placeholder="0 in">
+                    </div>
 
-            </form>
+                    <div class="form__numbers">
+                        <label for="weight" class="form__numbers-text">Weight</label>
+                        <input type="number" class="form__numbers-number" id="stone" placeholder="12 stone">
+                        <input type="number" class="form__numbers-number" id="pounds" placeholder="0 lb">
+                    </div>
+                    
+                    <textarea class="form__text form__longtext" id="goals" placeholder="What are your goals?"></textarea>
+
+                    <button class="btn-submit">
+						<span>
+							Send
+						</span>
+					</button>
+
+                </form>
+            </div>
         </main>
 
         <footer>
